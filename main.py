@@ -1080,4 +1080,4 @@ def get_endpoints():
     "odometro": "890125"
   }
 ]
-    return JSONResponse(content={"endpoints": endpoints_list})
+    return JSONResponse(content={"equipos": endpoints_list})
