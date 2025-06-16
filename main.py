@@ -5,7 +5,7 @@ app = FastAPI()
 
 @app.get("/api/positions")
 def get_endpoints():
-    endpoints_list = { "endpoints" : [
+    endpoints_list = [
   {
     "ultimo": "0 Día(s) 0 hora(s) 2 minuto(s) ",
     "imei": "354890871456789",
@@ -1079,5 +1079,5 @@ def get_endpoints():
     "temp3": "0.0",
     "odometro": "890125"
   }
-]}
+]
     return JSONResponse(content={"endpoints": endpoints_list})
